@@ -4,7 +4,6 @@ A **Data Analytics Project** that analyzes crime datasets to identify trends, vi
 
 The project demonstrates the complete data analytics workflow—from data ingestion and cleaning to database storage, visualization, and geographic analysis.
 
----
 
 # 📌 Project Overview
 
@@ -14,7 +13,6 @@ Crime datasets are uploaded as CSV files, cleaned and validated using **Python &
 
 This project focuses on practical data analysis rather than predictive machine learning, making it an ideal portfolio project for aspiring **Data Analysts**.
 
----
 
 # 🎯 Objectives
 
@@ -25,7 +23,6 @@ This project focuses on practical data analysis rather than predictive machine l
 - Build interactive dashboards
 - Generate meaningful insights for decision-making
 
----
 
 # ✨ Key Features
 
@@ -38,7 +35,6 @@ This project focuses on practical data analysis rather than predictive machine l
 - Bulk Data Import
 - Dataset Management
 
----
 
 ## 🗄 Database Management
 
@@ -47,7 +43,6 @@ This project focuses on practical data analysis rather than predictive machine l
 - Efficient Data Storage
 - Fast Query Execution
 
----
 
 ## 📈 Data Analytics Dashboard
 
@@ -61,7 +56,6 @@ Interactive dashboard displaying:
 - Arrested Suspects
 - High Severity Crimes
 
----
 
 ## 📊 Interactive Data Visualization
 
@@ -74,7 +68,6 @@ Includes:
 - Monthly Crime Trends
 - Top Crime Districts
 
----
 
 ## 🗺 Geographic Crime Analysis
 
@@ -87,7 +80,6 @@ Features:
 - Marker Popups
 - Crime Details
 
----
 
 ## 🔍 Crime Records Explorer
 
@@ -99,7 +91,6 @@ Features:
   - Police Station
 - Pagination
 
----
 
 ## 📋 Activity Tracking
 
@@ -109,7 +100,6 @@ Tracks important system activities such as:
 - Dataset Upload
 - Dataset Import
 
----
 
 ## 🧠 AI-Ready Architecture
 
@@ -121,7 +111,6 @@ The project is designed for future enhancements including:
 - Risk Score Analysis
 - Automated Reports
 
----
 
 # 📊 Data Analytics Concepts Applied
 
@@ -136,7 +125,6 @@ The project is designed for future enhancements including:
 - Geographic Data Analysis
 - Dashboard Design
 
----
 
 # 🛠 Technology Stack
 
@@ -144,34 +132,30 @@ The project is designed for future enhancements including:
 
 - Python
 
----
 
 ## Backend
 
 - Flask
 - SQLAlchemy
 
----
 
 ## Database
 
 - PostgreSQL
 
----
 
 ## Data Analysis
 
 - Pandas
 - NumPy
 
----
+
 
 ## Data Visualization
 
 - Chart.js
 - Leaflet.js
 
----
 
 ## Frontend
 
@@ -180,7 +164,6 @@ The project is designed for future enhancements including:
 - Bootstrap 5
 - JavaScript
 
----
 
 # 📈 Current Functionalities
 
@@ -208,7 +191,6 @@ The project is designed for future enhancements including:
 
 ✅ Activity Tracking
 
----
 
 # 📊 Dashboard KPIs
 
@@ -224,7 +206,6 @@ The dashboard automatically calculates:
 - Top Crime Types
 - Top Crime Districts
 
----
 
 # 📊 Visualizations
 
@@ -236,7 +217,6 @@ The analytics module includes:
 - 📉 Horizontal Bar Charts
 - 🗺 Interactive Crime Map
 
----
 
 # ⚙ Installation
 
@@ -246,7 +226,6 @@ The analytics module includes:
 git clone https://github.com/YOUR_USERNAME/Crime-Pattern-Analysis-System.git
 ```
 
----
 
 ## Navigate to Project
 
@@ -254,7 +233,6 @@ git clone https://github.com/YOUR_USERNAME/Crime-Pattern-Analysis-System.git
 cd Crime-Pattern-Analysis-System
 ```
 
----
 
 ## Create Virtual Environment
 
@@ -270,7 +248,6 @@ Activate
 venv\Scripts\activate
 ```
 
----
 
 ## Install Dependencies
 
@@ -278,7 +255,6 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
----
 
 ## Configure PostgreSQL
 
@@ -290,7 +266,6 @@ Update your database configuration inside:
 config.py
 ```
 
----
 
 ## Run the Project
 
@@ -298,7 +273,6 @@ config.py
 python app.py
 ```
 
----
 
 ## Open in Browser
 
@@ -306,7 +280,6 @@ python app.py
 http://127.0.0.1:5000
 ```
 
----
 
 # 📸 Project Screenshots
 
@@ -315,42 +288,30 @@ http://127.0.0.1:5000
 <img width="1896" height="1087" alt="image" src="https://github.com/user-attachments/assets/c9861f6c-c5df-48e8-8bef-276845b2b80d" />
 
 
----
-
 ### 📊 Dashboard
 
 <img width="1892" height="1076" alt="image" src="https://github.com/user-attachments/assets/b8c4676e-cfc5-43bd-af72-40f2b9e69410" />
 
-
----
 
 ### 📈 Analytics Dashboard
 
 <img width="1894" height="1082" alt="image" src="https://github.com/user-attachments/assets/7d5a5c17-07e7-46a5-991d-956144dd2512" />
 
 
----
-
 ### 🗺 Crime Map
 
 <img width="1585" height="867" alt="image" src="https://github.com/user-attachments/assets/f8359dfd-b142-4383-8d0e-55360622c58b" />
 
-
----
 
 ### 📂 Dataset Upload
 
 <img width="1919" height="981" alt="image" src="https://github.com/user-attachments/assets/39d3da28-7e9a-483f-806a-02a1609aa002" />
 
 
----
-
 ### 📋 Crime Records
 
 <img width="1609" height="1084" alt="image" src="https://github.com/user-attachments/assets/86dd4631-ff9d-4d5f-85e6-4dd4d9a74d02" />
 
-
----
 
 # 🚀 Future Enhancements
 
@@ -365,7 +326,6 @@ http://127.0.0.1:5000
 - Tableau Dashboard
 - REST API Integration
 
----
 
 # 🎓 Skills Demonstrated
 
@@ -395,7 +355,6 @@ http://127.0.0.1:5000
 - Chart.js
 - Leaflet.js
 
----
 
 # 👨‍💻 Author
 
@@ -411,13 +370,11 @@ Final Year B.Tech Student
 - Data Visualization
 - Python Development
 
----
 
 # 📜 License
 
 This project is intended for educational and portfolio purposes.
 
----
 
 # ⭐ Support
 
