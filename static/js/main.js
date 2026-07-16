@@ -1,0 +1,1 @@
+console.log("Crime Pattern Detection Started");

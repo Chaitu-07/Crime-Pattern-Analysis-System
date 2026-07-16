@@ -1,0 +1,345 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container-fluid">
+
+    <h2 class="mb-4">
+
+        <i class="fa-solid fa-file-arrow-up"></i>
+
+        Upload Crime Dataset
+
+    </h2>
+
+    <!-- Flash Messages -->
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+
+        {% if messages %}
+
+            {% for category, message in messages %}
+
+                <div class="alert alert-{{ category }} alert-dismissible fade show">
+
+                    {{ message }}
+
+                    <button class="btn-close" data-bs-dismiss="alert"></button>
+
+                </div>
+
+            {% endfor %}
+
+        {% endif %}
+
+    {% endwith %}
+
+    <!-- Upload Card -->
+
+    <div class="card shadow mb-5">
+
+        <div class="card-header bg-primary text-white">
+
+            <i class="fa-solid fa-upload"></i>
+
+            Upload CSV File
+
+        </div>
+
+        <div class="card-body">
+
+            <form method="POST" enctype="multipart/form-data">
+
+                <div class="row align-items-end">
+
+                    <div class="col-md-9">
+
+                        <label class="form-label">
+
+                            Choose CSV File
+
+                        </label>
+
+                        <input
+
+                            type="file"
+
+                            name="file"
+
+                            class="form-control"
+
+                            accept=".csv"
+
+                            required>
+
+                    </div>
+
+                    <div class="col-md-3">
+
+                        <button class="btn btn-primary w-100">
+
+                            <i class="fa-solid fa-upload"></i>
+
+                            Upload Dataset
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- Crime Records -->
+
+    <div class="d-flex justify-content-between align-items-center mb-3">
+
+        <h3>
+
+            <i class="fa-solid fa-table"></i>
+
+            Crime Records
+
+        </h3>
+
+        {% if crimes %}
+
+        <span class="badge bg-dark fs-6">
+
+            Total Records : {{ crimes.total }}
+
+        </span>
+
+        {% endif %}
+
+    </div>
+
+    <!-- Search -->
+
+    <form method="GET" class="mb-3">
+
+        <div class="input-group">
+
+            <input
+
+                type="text"
+
+                class="form-control"
+
+                name="search"
+
+                placeholder="Search Crime ID, Crime Type, District, Police Station..."
+
+                value="{{ search }}">
+
+            <button class="btn btn-success">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                Search
+
+            </button>
+
+        </div>
+
+    </form>
+
+    <!-- Table -->
+
+    <div class="card shadow">
+
+        <div class="table-responsive">
+
+            <table class="table table-hover table-striped mb-0">
+
+                <thead class="table-dark">
+
+                    <tr>
+
+                        <th>ID</th>
+
+                        <th>Crime Type</th>
+
+                        <th>District</th>
+
+                        <th>Police Station</th>
+
+                        <th>Status</th>
+
+                        <th width="180">Actions</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                {% if crimes and crimes.items %}
+
+                    {% for crime in crimes.items %}
+
+                    <tr>
+
+                        <td>{{ crime.crime_id }}</td>
+
+                        <td>{{ crime.crime_type }}</td>
+
+                        <td>{{ crime.district }}</td>
+
+                        <td>{{ crime.police_station }}</td>
+
+                        <td>
+
+                            <span class="badge bg-info">
+
+                                {{ crime.status }}
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <a
+
+                                href="/crime/{{ crime.id }}"
+
+                                class="btn btn-sm btn-primary">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                                View
+
+                            </a>
+
+                            <a
+
+                                href="/crime/delete/{{ crime.id }}"
+
+                                class="btn btn-sm btn-danger"
+
+                                onclick="return confirm('Delete this crime record?')">
+
+                                <i class="fa-solid fa-trash"></i>
+
+                                Delete
+
+                            </a>
+
+                        </td>
+
+                    </tr>
+
+                    {% endfor %}
+
+                {% else %}
+
+                    <tr>
+
+                        <td colspan="6" class="text-center py-5">
+
+                            <h5 class="text-muted">
+
+                                No crime records found.
+
+                            </h5>
+
+                            <p class="text-muted">
+
+                                Upload a CSV dataset to begin.
+
+                            </p>
+
+                        </td>
+
+                    </tr>
+
+                {% endif %}
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <!-- Pagination -->
+
+    {% if crimes and crimes.pages > 1 %}
+
+    <nav class="mt-4">
+
+        <ul class="pagination justify-content-center">
+
+            {% if crimes.has_prev %}
+
+            <li class="page-item">
+
+                <a
+
+                    class="page-link"
+
+                    href="?page={{ crimes.prev_num }}&search={{ search }}">
+
+                    Previous
+
+                </a>
+
+            </li>
+
+            {% endif %}
+
+            {% for page_num in crimes.iter_pages() %}
+
+                {% if page_num %}
+
+                <li class="page-item {% if page_num == crimes.page %}active{% endif %}">
+
+                    <a
+
+                        class="page-link"
+
+                        href="?page={{ page_num }}&search={{ search }}">
+
+                        {{ page_num }}
+
+                    </a>
+
+                </li>
+
+                {% endif %}
+
+            {% endfor %}
+
+            {% if crimes.has_next %}
+
+            <li class="page-item">
+
+                <a
+
+                    class="page-link"
+
+                    href="?page={{ crimes.next_num }}&search={{ search }}">
+
+                    Next
+
+                </a>
+
+            </li>
+
+            {% endif %}
+
+        </ul>
+
+    </nav>
+
+    {% endif %}
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,101 @@
+crime_id,crime_type,category,crime_date,crime_time,day,month,year,district,police_station,latitude,longitude,victim_age,victim_gender,suspect_age,suspect_gender,weapon_used,severity,status,arrest_made,case_closed,description
+1,Theft,Theft,2024-10-08,07:14:00,Tuesday,October,2024,North,North PS,17.326746,78.261497,65,Male,55,Female,None,Low,Open,Yes,Yes,Theft reported in North.
+2,Kidnapping,Kidnapping,2024-07-22,22:41:00,Monday,July,2024,Central,Central PS,17.635729,78.451712,46,Female,18,Male,Blunt Object,High,Under Investigation,Yes,Yes,Kidnapping reported in Central.
+3,Robbery,Robbery,2024-04-04,12:06:00,Thursday,April,2024,Old Town,Old Town PS,17.447439,78.406373,34,Male,47,Unknown,None,Critical,Open,No,No,Robbery reported in Old Town.
+4,Robbery,Robbery,2024-02-16,21:14:00,Friday,February,2024,East,East PS,17.675188,78.791133,32,Male,42,Female,Blunt Object,High,Open,No,No,Robbery reported in East.
+5,Domestic Violence,Domestic Violence,2024-09-30,22:59:00,Monday,September,2024,East,East PS,17.625951,78.242842,58,Male,52,Unknown,Knife,Medium,Under Investigation,No,No,Domestic Violence reported in East.
+6,Domestic Violence,Domestic Violence,2024-11-28,01:14:00,Thursday,November,2024,East,East PS,17.701991,78.683027,43,Female,22,Male,Other,High,Open,No,No,Domestic Violence reported in East.
+7,Burglary,Burglary,2024-09-28,04:15:00,Saturday,September,2024,University Area,University Area PS,17.659744,78.523386,65,Female,55,Female,Firearm,Medium,Open,No,Yes,Burglary reported in University Area.
+8,Robbery,Robbery,2024-06-05,20:10:00,Wednesday,June,2024,Central,Central PS,17.685644,78.453296,22,Female,42,Unknown,Blunt Object,High,Closed,Yes,Yes,Robbery reported in Central.
+9,Domestic Violence,Domestic Violence,2024-12-14,03:18:00,Saturday,December,2024,West,West PS,17.489121,78.472234,64,Female,50,Male,Other,Low,Closed,No,Yes,Domestic Violence reported in West.
+10,Cyber Crime,Cyber Crime,2024-06-14,17:49:00,Friday,June,2024,South,South PS,17.757339,78.751096,56,Female,49,Male,None,High,Under Investigation,Yes,Yes,Cyber Crime reported in South.
+11,Drug Offense,Drug Offense,2024-03-21,02:46:00,Thursday,March,2024,East,East PS,17.517295,78.241528,66,Male,26,Unknown,Blunt Object,Medium,Under Investigation,No,Yes,Drug Offense reported in East.
+12,Murder,Murder,2025-02-12,21:41:00,Wednesday,February,2025,East,East PS,17.455381,78.739768,46,Male,33,Male,None,High,Open,Yes,Yes,Murder reported in East.
+13,Robbery,Robbery,2024-03-01,07:04:00,Friday,March,2024,Central,Central PS,17.747981,78.715781,22,Male,35,Unknown,Blunt Object,Medium,Closed,Yes,No,Robbery reported in Central.
+14,Vehicle Theft,Vehicle Theft,2025-02-20,06:06:00,Thursday,February,2025,East,East PS,17.303312,78.458631,45,Female,47,Unknown,None,Low,Open,No,No,Vehicle Theft reported in East.
+15,Assault,Assault,2024-07-15,06:34:00,Monday,July,2024,North,North PS,17.496737,78.453129,35,Female,33,Male,Blunt Object,Low,Open,Yes,Yes,Assault reported in North.
+16,Burglary,Burglary,2025-02-20,15:30:00,Thursday,February,2025,East,East PS,17.367561,78.440624,21,Male,42,Male,Blunt Object,High,Under Investigation,No,No,Burglary reported in East.
+17,Burglary,Burglary,2024-07-13,09:13:00,Saturday,July,2024,University Area,University Area PS,17.78279,78.547508,52,Male,38,Male,None,Critical,Closed,Yes,Yes,Burglary reported in University Area.
+18,Burglary,Burglary,2024-03-11,19:04:00,Monday,March,2024,North,North PS,17.621367,78.341122,25,Male,55,Unknown,None,Low,Under Investigation,No,No,Burglary reported in North.
+19,Domestic Violence,Domestic Violence,2024-11-17,07:16:00,Sunday,November,2024,East,East PS,17.467682,78.603014,37,Female,38,Male,None,Critical,Closed,Yes,Yes,Domestic Violence reported in East.
+20,Kidnapping,Kidnapping,2024-09-28,04:59:00,Saturday,September,2024,East,East PS,17.441955,78.241275,33,Female,36,Male,Blunt Object,High,Closed,Yes,No,Kidnapping reported in East.
+21,Burglary,Burglary,2024-09-27,03:56:00,Friday,September,2024,North,North PS,17.30887,78.531934,35,Female,56,Male,Firearm,Medium,Closed,No,No,Burglary reported in North.
+22,Theft,Theft,2024-04-04,20:27:00,Thursday,April,2024,West,West PS,17.706141,78.226452,39,Male,58,Female,Knife,Critical,Closed,No,Yes,Theft reported in West.
+23,Robbery,Robbery,2024-06-01,17:02:00,Saturday,June,2024,North,North PS,17.709027,78.549506,27,Female,26,Male,Firearm,High,Open,No,Yes,Robbery reported in North.
+24,Domestic Violence,Domestic Violence,2024-04-15,11:49:00,Monday,April,2024,East,East PS,17.557936,78.724828,57,Male,33,Male,Knife,Critical,Open,Yes,No,Domestic Violence reported in East.
+25,Domestic Violence,Domestic Violence,2024-09-11,08:10:00,Wednesday,September,2024,Industrial Zone,Industrial Zone PS,17.683056,78.264857,20,Female,32,Male,Blunt Object,High,Under Investigation,Yes,Yes,Domestic Violence reported in Industrial Zone.
+26,Domestic Violence,Domestic Violence,2024-07-16,12:21:00,Tuesday,July,2024,Central,Central PS,17.403232,78.241652,67,Female,40,Unknown,Other,Critical,Closed,No,Yes,Domestic Violence reported in Central.
+27,Murder,Murder,2024-07-01,18:16:00,Monday,July,2024,North,North PS,17.271041,78.557943,40,Female,45,Unknown,Other,Low,Under Investigation,Yes,No,Murder reported in North.
+28,Fraud,Fraud,2024-01-02,16:59:00,Tuesday,January,2024,Central,Central PS,17.693581,78.612114,65,Male,41,Female,None,High,Closed,No,Yes,Fraud reported in Central.
+29,Kidnapping,Kidnapping,2024-11-12,21:26:00,Tuesday,November,2024,West,West PS,17.429401,78.618325,53,Male,30,Female,Blunt Object,Medium,Closed,No,No,Kidnapping reported in West.
+30,Murder,Murder,2024-10-20,06:27:00,Sunday,October,2024,Central,Central PS,17.682167,78.563997,38,Female,46,Female,Knife,Critical,Closed,Yes,Yes,Murder reported in Central.
+31,Kidnapping,Kidnapping,2024-12-09,02:52:00,Monday,December,2024,West,West PS,17.7736,78.340921,37,Male,30,Male,None,Low,Open,No,Yes,Kidnapping reported in West.
+32,Fraud,Fraud,2024-07-18,22:44:00,Thursday,July,2024,University Area,University Area PS,17.461188,78.439792,27,Male,24,Female,Knife,Medium,Closed,No,Yes,Fraud reported in University Area.
+33,Robbery,Robbery,2025-04-12,04:51:00,Saturday,April,2025,East,East PS,17.505554,78.518679,53,Female,46,Unknown,Other,Critical,Closed,No,Yes,Robbery reported in East.
+34,Vehicle Theft,Vehicle Theft,2024-09-22,07:53:00,Sunday,September,2024,University Area,University Area PS,17.600714,78.659488,51,Female,58,Male,Firearm,Critical,Open,No,Yes,Vehicle Theft reported in University Area.
+35,Cyber Crime,Cyber Crime,2024-11-23,17:05:00,Saturday,November,2024,West,West PS,17.326106,78.338757,62,Male,31,Male,Blunt Object,Critical,Under Investigation,No,No,Cyber Crime reported in West.
+36,Assault,Assault,2025-03-06,12:57:00,Thursday,March,2025,Central,Central PS,17.673388,78.767637,19,Female,48,Male,Firearm,High,Under Investigation,No,Yes,Assault reported in Central.
+37,Assault,Assault,2024-10-06,13:31:00,Sunday,October,2024,University Area,University Area PS,17.265964,78.401678,61,Female,28,Female,Knife,Low,Under Investigation,Yes,Yes,Assault reported in University Area.
+38,Burglary,Burglary,2025-04-17,05:03:00,Thursday,April,2025,Industrial Zone,Industrial Zone PS,17.393086,78.396412,47,Female,39,Female,Firearm,Critical,Under Investigation,Yes,No,Burglary reported in Industrial Zone.
+39,Kidnapping,Kidnapping,2024-02-23,11:14:00,Friday,February,2024,Central,Central PS,17.607579,78.66874,59,Male,19,Male,Knife,Low,Closed,Yes,Yes,Kidnapping reported in Central.
+40,Vehicle Theft,Vehicle Theft,2024-04-27,18:13:00,Saturday,April,2024,South,South PS,17.505769,78.353746,41,Male,56,Unknown,None,Medium,Under Investigation,Yes,Yes,Vehicle Theft reported in South.
+41,Drug Offense,Drug Offense,2025-01-19,12:45:00,Sunday,January,2025,West,West PS,17.359081,78.555259,58,Male,24,Unknown,Firearm,Low,Closed,Yes,No,Drug Offense reported in West.
+42,Domestic Violence,Domestic Violence,2025-01-14,02:32:00,Tuesday,January,2025,Industrial Zone,Industrial Zone PS,17.606149,78.207591,44,Female,24,Female,Firearm,Critical,Closed,Yes,No,Domestic Violence reported in Industrial Zone.
+43,Kidnapping,Kidnapping,2024-10-03,19:51:00,Thursday,October,2024,South,South PS,17.75579,78.664785,47,Female,55,Female,Firearm,Medium,Open,No,No,Kidnapping reported in South.
+44,Vehicle Theft,Vehicle Theft,2025-01-23,10:01:00,Thursday,January,2025,East,East PS,17.521869,78.395009,49,Male,40,Female,Firearm,High,Closed,No,Yes,Vehicle Theft reported in East.
+45,Robbery,Robbery,2024-09-04,23:26:00,Wednesday,September,2024,East,East PS,17.518718,78.654899,62,Female,59,Unknown,Blunt Object,Critical,Open,Yes,No,Robbery reported in East.
+46,Fraud,Fraud,2024-09-06,09:42:00,Friday,September,2024,East,East PS,17.569856,78.483956,51,Female,45,Unknown,Other,High,Under Investigation,No,No,Fraud reported in East.
+47,Murder,Murder,2024-08-24,03:46:00,Saturday,August,2024,West,West PS,17.355921,78.271733,52,Male,30,Male,Blunt Object,High,Closed,No,Yes,Murder reported in West.
+48,Murder,Murder,2024-08-20,11:11:00,Tuesday,August,2024,East,East PS,17.416247,78.624811,26,Female,20,Male,Other,High,Closed,Yes,No,Murder reported in East.
+49,Theft,Theft,2024-10-18,15:30:00,Friday,October,2024,North,North PS,17.492258,78.310618,21,Female,48,Male,None,Critical,Under Investigation,Yes,Yes,Theft reported in North.
+50,Burglary,Burglary,2024-11-07,02:15:00,Thursday,November,2024,South,South PS,17.315148,78.658666,56,Male,51,Female,Blunt Object,Critical,Under Investigation,No,No,Burglary reported in South.
+51,Drug Offense,Drug Offense,2024-04-11,06:40:00,Thursday,April,2024,Central,Central PS,17.366064,78.596257,28,Male,29,Unknown,None,Medium,Open,No,No,Drug Offense reported in Central.
+52,Murder,Murder,2024-02-03,07:18:00,Saturday,February,2024,University Area,University Area PS,17.638826,78.621793,47,Male,32,Female,Other,Medium,Under Investigation,Yes,Yes,Murder reported in University Area.
+53,Murder,Murder,2024-05-25,02:03:00,Saturday,May,2024,South,South PS,17.341258,78.384567,65,Female,46,Male,Blunt Object,High,Closed,No,No,Murder reported in South.
+54,Vehicle Theft,Vehicle Theft,2024-03-23,19:02:00,Saturday,March,2024,University Area,University Area PS,17.739183,78.64072,56,Female,19,Male,Knife,Low,Closed,No,Yes,Vehicle Theft reported in University Area.
+55,Vehicle Theft,Vehicle Theft,2025-06-15,20:28:00,Sunday,June,2025,South,South PS,17.75384,78.308893,55,Female,58,Female,None,Critical,Under Investigation,No,No,Vehicle Theft reported in South.
+56,Domestic Violence,Domestic Violence,2024-04-17,05:21:00,Wednesday,April,2024,Old Town,Old Town PS,17.476405,78.497281,60,Female,53,Male,Blunt Object,Low,Under Investigation,No,No,Domestic Violence reported in Old Town.
+57,Fraud,Fraud,2025-06-10,00:42:00,Tuesday,June,2025,North,North PS,17.728152,78.477186,21,Male,51,Female,Other,Critical,Closed,No,Yes,Fraud reported in North.
+58,Murder,Murder,2024-05-14,09:28:00,Tuesday,May,2024,East,East PS,17.734466,78.490827,19,Male,28,Female,Other,Low,Closed,No,Yes,Murder reported in East.
+59,Robbery,Robbery,2025-04-17,03:41:00,Thursday,April,2025,East,East PS,17.707679,78.499025,63,Female,50,Unknown,Firearm,Critical,Under Investigation,No,Yes,Robbery reported in East.
+60,Kidnapping,Kidnapping,2024-05-28,12:12:00,Tuesday,May,2024,University Area,University Area PS,17.757027,78.504945,26,Male,35,Female,Firearm,High,Open,No,No,Kidnapping reported in University Area.
+61,Burglary,Burglary,2025-04-02,17:30:00,Wednesday,April,2025,University Area,University Area PS,17.439818,78.53115,52,Female,47,Female,Knife,Medium,Closed,No,Yes,Burglary reported in University Area.
+62,Theft,Theft,2024-11-21,23:30:00,Thursday,November,2024,Industrial Zone,Industrial Zone PS,17.637875,78.686845,42,Male,49,Male,Knife,High,Open,No,Yes,Theft reported in Industrial Zone.
+63,Theft,Theft,2024-05-27,13:55:00,Monday,May,2024,University Area,University Area PS,17.61013,78.292617,48,Female,39,Unknown,Blunt Object,Low,Under Investigation,No,No,Theft reported in University Area.
+64,Kidnapping,Kidnapping,2024-02-06,19:04:00,Tuesday,February,2024,University Area,University Area PS,17.379124,78.61064,36,Male,23,Female,None,Low,Under Investigation,Yes,No,Kidnapping reported in University Area.
+65,Theft,Theft,2024-11-28,01:18:00,Thursday,November,2024,Central,Central PS,17.447155,78.458412,33,Female,54,Unknown,Knife,Medium,Open,Yes,No,Theft reported in Central.
+66,Vehicle Theft,Vehicle Theft,2024-05-26,07:29:00,Sunday,May,2024,East,East PS,17.600848,78.475742,60,Male,47,Female,Other,Medium,Open,No,No,Vehicle Theft reported in East.
+67,Domestic Violence,Domestic Violence,2025-03-10,22:16:00,Monday,March,2025,West,West PS,17.50126,78.381273,42,Female,24,Male,Blunt Object,High,Closed,No,No,Domestic Violence reported in West.
+68,Domestic Violence,Domestic Violence,2025-02-09,08:00:00,Sunday,February,2025,Central,Central PS,17.561261,78.61148,65,Male,56,Unknown,Blunt Object,High,Open,No,Yes,Domestic Violence reported in Central.
+69,Drug Offense,Drug Offense,2024-09-13,21:48:00,Friday,September,2024,East,East PS,17.646511,78.595509,26,Male,58,Unknown,None,High,Under Investigation,Yes,No,Drug Offense reported in East.
+70,Robbery,Robbery,2024-10-29,10:47:00,Tuesday,October,2024,South,South PS,17.478527,78.320477,68,Female,51,Unknown,Firearm,Medium,Under Investigation,No,No,Robbery reported in South.
+71,Robbery,Robbery,2025-04-24,02:09:00,Thursday,April,2025,Old Town,Old Town PS,17.664783,78.335369,61,Female,53,Female,None,Critical,Open,No,Yes,Robbery reported in Old Town.
+72,Cyber Crime,Cyber Crime,2024-09-25,18:24:00,Wednesday,September,2024,University Area,University Area PS,17.70233,78.764175,24,Male,48,Male,Other,High,Closed,Yes,Yes,Cyber Crime reported in University Area.
+73,Murder,Murder,2025-02-22,03:08:00,Saturday,February,2025,University Area,University Area PS,17.274941,78.222327,49,Male,24,Male,Other,Medium,Under Investigation,No,No,Murder reported in University Area.
+74,Drug Offense,Drug Offense,2024-06-07,13:41:00,Friday,June,2024,Industrial Zone,Industrial Zone PS,17.304462,78.493608,44,Female,20,Unknown,Firearm,Medium,Under Investigation,No,Yes,Drug Offense reported in Industrial Zone.
+75,Robbery,Robbery,2025-01-11,17:57:00,Saturday,January,2025,Old Town,Old Town PS,17.787813,78.415204,43,Female,30,Male,Blunt Object,Low,Closed,Yes,Yes,Robbery reported in Old Town.
+76,Cyber Crime,Cyber Crime,2024-09-06,04:50:00,Friday,September,2024,Central,Central PS,17.560518,78.241166,66,Male,55,Male,Knife,High,Open,Yes,No,Cyber Crime reported in Central.
+77,Burglary,Burglary,2024-09-13,05:07:00,Friday,September,2024,South,South PS,17.613582,78.215468,18,Female,33,Unknown,Firearm,Low,Open,No,Yes,Burglary reported in South.
+78,Fraud,Fraud,2025-06-22,03:47:00,Sunday,June,2025,South,South PS,17.284957,78.468965,41,Male,46,Unknown,Knife,Low,Closed,No,No,Fraud reported in South.
+79,Theft,Theft,2025-05-05,12:27:00,Monday,May,2025,Central,Central PS,17.627354,78.494161,46,Male,23,Female,Other,Medium,Open,Yes,No,Theft reported in Central.
+80,Fraud,Fraud,2024-10-28,14:32:00,Monday,October,2024,Old Town,Old Town PS,17.582985,78.259507,62,Male,59,Unknown,Other,Medium,Under Investigation,No,Yes,Fraud reported in Old Town.
+81,Cyber Crime,Cyber Crime,2025-04-09,12:26:00,Wednesday,April,2025,Industrial Zone,Industrial Zone PS,17.651287,78.387529,38,Female,41,Male,Blunt Object,Low,Open,Yes,Yes,Cyber Crime reported in Industrial Zone.
+82,Robbery,Robbery,2025-01-16,04:35:00,Thursday,January,2025,Industrial Zone,Industrial Zone PS,17.28299,78.773975,53,Female,60,Male,Blunt Object,High,Closed,No,Yes,Robbery reported in Industrial Zone.
+83,Drug Offense,Drug Offense,2024-11-15,11:06:00,Friday,November,2024,West,West PS,17.567855,78.327643,60,Female,32,Male,Firearm,High,Open,No,Yes,Drug Offense reported in West.
+84,Kidnapping,Kidnapping,2024-01-27,19:59:00,Saturday,January,2024,Industrial Zone,Industrial Zone PS,17.611807,78.616083,19,Male,35,Unknown,Firearm,High,Under Investigation,Yes,Yes,Kidnapping reported in Industrial Zone.
+85,Drug Offense,Drug Offense,2025-02-14,02:09:00,Friday,February,2025,South,South PS,17.657533,78.783086,23,Male,42,Female,Blunt Object,High,Open,No,No,Drug Offense reported in South.
+86,Drug Offense,Drug Offense,2024-03-27,01:09:00,Wednesday,March,2024,Old Town,Old Town PS,17.336575,78.570703,61,Male,35,Female,Blunt Object,Critical,Closed,No,No,Drug Offense reported in Old Town.
+87,Assault,Assault,2025-06-08,03:22:00,Sunday,June,2025,West,West PS,17.486452,78.369948,61,Female,51,Unknown,Firearm,Low,Open,No,Yes,Assault reported in West.
+88,Assault,Assault,2024-11-04,06:49:00,Monday,November,2024,Central,Central PS,17.325479,78.353312,38,Male,18,Female,Blunt Object,Medium,Open,No,Yes,Assault reported in Central.
+89,Robbery,Robbery,2025-02-10,23:02:00,Monday,February,2025,Old Town,Old Town PS,17.489921,78.475853,22,Female,54,Female,Other,Critical,Closed,No,No,Robbery reported in Old Town.
+90,Fraud,Fraud,2024-01-22,10:10:00,Monday,January,2024,North,North PS,17.690727,78.570875,62,Female,23,Female,None,Medium,Under Investigation,No,Yes,Fraud reported in North.
+91,Murder,Murder,2024-12-13,07:21:00,Friday,December,2024,Industrial Zone,Industrial Zone PS,17.678515,78.245828,58,Male,51,Unknown,Knife,High,Under Investigation,Yes,Yes,Murder reported in Industrial Zone.
+92,Burglary,Burglary,2024-09-19,06:11:00,Thursday,September,2024,North,North PS,17.581319,78.656129,59,Male,29,Unknown,Blunt Object,Critical,Closed,No,No,Burglary reported in North.
+93,Burglary,Burglary,2025-03-26,02:30:00,Wednesday,March,2025,Old Town,Old Town PS,17.493214,78.381692,35,Male,40,Unknown,None,High,Under Investigation,No,Yes,Burglary reported in Old Town.
+94,Cyber Crime,Cyber Crime,2024-10-20,02:41:00,Sunday,October,2024,Central,Central PS,17.725338,78.713176,57,Female,47,Unknown,Other,Low,Under Investigation,Yes,No,Cyber Crime reported in Central.
+95,Kidnapping,Kidnapping,2024-06-03,01:28:00,Monday,June,2024,University Area,University Area PS,17.306926,78.739476,39,Male,50,Unknown,Knife,Low,Open,No,No,Kidnapping reported in University Area.
+96,Cyber Crime,Cyber Crime,2025-01-16,09:24:00,Thursday,January,2025,South,South PS,17.474823,78.40302,56,Male,58,Unknown,Firearm,Low,Under Investigation,Yes,No,Cyber Crime reported in South.
+97,Murder,Murder,2024-06-02,10:05:00,Sunday,June,2024,West,West PS,17.570507,78.284857,40,Female,59,Unknown,Blunt Object,Medium,Closed,Yes,No,Murder reported in West.
+98,Domestic Violence,Domestic Violence,2024-12-02,04:42:00,Monday,December,2024,Industrial Zone,Industrial Zone PS,17.636557,78.768265,61,Male,59,Unknown,Blunt Object,High,Open,No,No,Domestic Violence reported in Industrial Zone.
+99,Assault,Assault,2024-12-15,15:12:00,Sunday,December,2024,South,South PS,17.374599,78.282539,22,Female,24,Unknown,Other,Low,Closed,No,Yes,Assault reported in South.
+100,Burglary,Burglary,2024-06-15,05:53:00,Saturday,June,2024,Industrial Zone,Industrial Zone PS,17.631065,78.574844,28,Female,20,Female,Firearm,Medium,Under Investigation,No,No,Burglary reported in Industrial Zone.

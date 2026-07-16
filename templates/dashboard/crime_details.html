@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>
+
+Crime Details
+
+</h2>
+
+<hr>
+
+<div class="card shadow">
+
+<div class="card-body">
+
+<table class="table">
+
+<tr><th>Crime ID</th><td>{{ crime.crime_id }}</td></tr>
+
+<tr><th>Crime Type</th><td>{{ crime.crime_type }}</td></tr>
+
+<tr><th>Category</th><td>{{ crime.category }}</td></tr>
+
+<tr><th>Date</th><td>{{ crime.crime_date }}</td></tr>
+
+<tr><th>Time</th><td>{{ crime.crime_time }}</td></tr>
+
+<tr><th>District</th><td>{{ crime.district }}</td></tr>
+
+<tr><th>Police Station</th><td>{{ crime.police_station }}</td></tr>
+
+<tr><th>Victim Age</th><td>{{ crime.victim_age }}</td></tr>
+
+<tr><th>Victim Gender</th><td>{{ crime.victim_gender }}</td></tr>
+
+<tr><th>Suspect Age</th><td>{{ crime.suspect_age }}</td></tr>
+
+<tr><th>Suspect Gender</th><td>{{ crime.suspect_gender }}</td></tr>
+
+<tr><th>Weapon</th><td>{{ crime.weapon_used }}</td></tr>
+
+<tr><th>Severity</th><td>{{ crime.severity }}</td></tr>
+
+<tr><th>Status</th><td>{{ crime.status }}</td></tr>
+
+<tr><th>Description</th><td>{{ crime.description }}</td></tr>
+
+</table>
+
+</div>
+
+</div>
+
+<br>
+
+<a href="/crimes" class="btn btn-secondary">
+
+Back
+
+</a>
+
+{% endblock %}

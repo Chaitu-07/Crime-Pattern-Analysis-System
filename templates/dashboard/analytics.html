@@ -1,0 +1,169 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container-fluid">
+
+    <h2 class="mb-4">
+        📊 Crime Analytics Dashboard
+    </h2>
+
+    <div class="row">
+
+        <!-- Crime Types -->
+        <div class="col-lg-6 mb-4">
+
+            <div class="card shadow">
+
+                <div class="card-header bg-primary text-white">
+
+                    <i class="fa-solid fa-chart-column"></i>
+
+                    Crime Types
+
+                </div>
+
+                <div class="card-body">
+
+                    <canvas id="crimeChart"></canvas>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Crime Status -->
+        <div class="col-lg-6 mb-4">
+
+            <div class="card shadow">
+
+                <div class="card-header bg-success text-white">
+
+                    <i class="fa-solid fa-chart-pie"></i>
+
+                    Crime Status
+
+                </div>
+
+                <div class="card-body">
+
+                    <canvas id="statusChart"></canvas>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <!-- Monthly Crimes -->
+        <div class="col-lg-6 mb-4">
+
+            <div class="card shadow">
+
+                <div class="card-header bg-warning">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                    Monthly Crimes
+
+                </div>
+
+                <div class="card-body">
+
+                    <canvas id="monthChart"></canvas>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Top Districts -->
+        <div class="col-lg-6 mb-4">
+
+            <div class="card shadow">
+
+                <div class="card-header bg-danger text-white">
+
+                    <i class="fa-solid fa-map-location-dot"></i>
+
+                    Top Districts
+
+                </div>
+
+                <div class="card-body">
+
+                    <canvas id="districtChart"></canvas>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Interactive Crime Map -->
+    <div class="row">
+
+        <div class="col-12">
+
+            <div class="card shadow">
+
+                <div class="card-header bg-dark text-white">
+
+                    <i class="fa-solid fa-earth-asia"></i>
+
+                    Crime Locations Map
+
+                </div>
+
+                <div class="card-body">
+
+                    <div id="crimeMap"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
+
+
+{% block scripts %}
+
+<script>
+
+window.analyticsData = {
+
+    crimeLabels: {{ crime_labels|tojson }},
+    crimeValues: {{ crime_values|tojson }},
+
+    statusLabels: {{ status_labels|tojson }},
+    statusValues: {{ status_values|tojson }},
+
+    monthLabels: {{ month_labels|tojson }},
+    monthValues: {{ month_values|tojson }},
+
+    districtLabels: {{ district_labels|tojson }},
+    districtValues: {{ district_values|tojson }},
+
+    locations: {{ locations|safe }}
+
+};
+
+</script>
+
+<script src="{{ url_for('static', filename='js/analytics.js') }}"></script>
+
+{% endblock %}

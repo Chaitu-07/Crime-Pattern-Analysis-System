@@ -1,0 +1,551 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container-fluid">
+
+    <h2 class="mb-4">
+        <i class="fa-solid fa-chart-line"></i>
+        Dashboard
+    </h2>
+
+    <!-- Top Statistics -->
+    <div class="row g-4">
+
+        <!-- Total Crimes -->
+        <div class="col-lg-3 col-md-6">
+
+            <div class="card shadow stat-card">
+
+                <div class="card-body text-center">
+
+                    <i class="fa-solid fa-user-secret fa-2x text-primary mb-3"></i>
+
+                    <h5>Total Crimes</h5>
+
+                    <h2>{{ total }}</h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Uploaded Datasets -->
+        <div class="col-lg-3 col-md-6">
+
+            <div class="card shadow stat-card">
+
+                <div class="card-body text-center">
+
+                    <i class="fa-solid fa-file-csv fa-2x text-success mb-3"></i>
+
+                    <h5>Datasets</h5>
+
+                    <h2>1</h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Districts -->
+        <div class="col-lg-3 col-md-6">
+
+            <div class="card shadow stat-card">
+
+                <div class="card-body text-center">
+
+                    <i class="fa-solid fa-map-location-dot fa-2x text-warning mb-3"></i>
+
+                    <h5>Districts</h5>
+
+                    <h2>{{ districts }}</h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Police Stations -->
+        <div class="col-lg-3 col-md-6">
+
+            <div class="card shadow stat-card">
+
+                <div class="card-body text-center">
+
+                    <i class="fa-solid fa-building-shield fa-2x text-danger mb-3"></i>
+
+                    <h5>Police Stations</h5>
+
+                    <h2>{{ stations }}</h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Crime Statistics -->
+    <div class="row mt-4">
+
+        <div class="col-md-3">
+
+            <div class="card border-success shadow">
+
+                <div class="card-body text-center">
+
+                    <h5>Solved Cases</h5>
+
+                    <h2>{{ solved }}</h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="card border-danger shadow">
+
+                <div class="card-body text-center">
+
+                    <h5>Unsolved Cases</h5>
+
+                    <h2>{{ unsolved }}</h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="card border-warning shadow">
+
+                <div class="card-body text-center">
+
+                    <h5>Arrests Made</h5>
+
+                    <h2>{{ arrested }}</h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="card border-dark shadow">
+
+                <div class="card-body text-center">
+
+                    <h5>High Severity</h5>
+
+                    <h2>{{ high_severity }}</h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Top Crime Types & Districts -->
+    <div class="row mt-5">
+
+        <div class="col-lg-6">
+
+            <div class="card shadow">
+
+                <div class="card-header bg-dark text-white">
+
+                    <i class="fa-solid fa-list"></i>
+
+                    Top 5 Crime Types
+
+                </div>
+
+                <div class="card-body">
+
+                    <table class="table table-hover">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Crime Type</th>
+
+                                <th>Total</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            {% for crime in top_crimes %}
+
+                            <tr>
+
+                                <td>{{ crime[0] }}</td>
+
+                                <td>{{ crime[1] }}</td>
+
+                            </tr>
+
+                            {% endfor %}
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-6">
+
+            <div class="card shadow">
+
+                <div class="card-header bg-dark text-white">
+
+                    <i class="fa-solid fa-map"></i>
+
+                    Top 5 Districts
+
+                </div>
+
+                <div class="card-body">
+
+                    <table class="table table-hover">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>District</th>
+
+                                <th>Total Crimes</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            {% for district in top_districts %}
+
+                            <tr>
+
+                                <td>{{ district[0] }}</td>
+
+                                <td>{{ district[1] }}</td>
+
+                            </tr>
+
+                            {% endfor %}
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Bottom Section -->
+
+<div class="row mt-5">
+
+    <!-- Recent Activity -->
+
+    <div class="col-lg-6">
+
+        <div class="card shadow h-100">
+
+            <div class="card-header bg-dark text-white">
+
+                <i class="fa-solid fa-clock-rotate-left"></i>
+
+                Recent Activity
+
+            </div>
+
+            <div class="card-body">
+
+                {% if activities %}
+
+                    <ul class="list-group list-group-flush">
+
+                        {% for activity in activities %}
+
+                        <li class="list-group-item">
+
+                            <i class="fa-solid fa-check-circle text-success me-2"></i>
+
+                            {{ activity.action }}
+
+                            <br>
+
+                            <small class="text-muted">
+
+                                {{ activity.created_at.strftime("%d %b %Y %I:%M %p") }}
+
+                            </small>
+
+                        </li>
+
+                        {% endfor %}
+
+                    </ul>
+
+                {% else %}
+
+                    <p class="text-muted">
+
+                        No recent activity found.
+
+                    </p>
+
+                {% endif %}
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- AI Quick Insights -->
+
+    <div class="col-lg-6">
+
+        <div class="card shadow h-100">
+
+            <div class="card-header bg-primary text-white">
+
+                <i class="fa-solid fa-brain"></i>
+
+                AI Quick Insights
+
+            </div>
+
+            <div class="card-body">
+
+                <p>
+
+                    <strong>Highest Crime Type</strong>
+
+                    <br>
+
+                    {{ highest_crime }}
+
+                </p>
+
+                <hr>
+
+                <p>
+
+                    <strong>Highest Risk District</strong>
+
+                    <br>
+
+                    {{ highest_district }}
+
+                </p>
+
+                <hr>
+
+                <p>
+
+                    <strong>Peak Crime Month</strong>
+
+                    <br>
+
+                    {{ peak_month }}
+
+                </p>
+
+                <hr>
+
+                <p>
+
+                    <strong>Solved Rate</strong>
+
+                    <br>
+
+                    {{ solved_rate }}%
+
+                </p>
+
+                <hr>
+
+                <p class="mb-0">
+
+                    <strong>AI Recommendation</strong>
+
+                    <br>
+
+                    {{ recommendation }}
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<br>
+
+<!-- Dataset + Quick Actions -->
+
+<div class="row">
+
+    <!-- Latest Dataset -->
+
+    <div class="col-lg-6">
+
+        <div class="card shadow h-100">
+
+            <div class="card-header bg-success text-white">
+
+                <i class="fa-solid fa-database"></i>
+
+                Dataset Summary
+
+            </div>
+
+            <div class="card-body">
+
+                <table class="table table-borderless">
+
+                    <tr>
+
+                        <th>Total Records</th>
+
+                        <td>{{ total }}</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <th>Districts</th>
+
+                        <td>{{ districts }}</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <th>Police Stations</th>
+
+                        <td>{{ stations }}</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <th>Solved Cases</th>
+
+                        <td>{{ solved }}</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <th>Unsolved Cases</th>
+
+                        <td>{{ unsolved }}</td>
+
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Quick Actions -->
+
+    <div class="col-lg-6">
+
+        <div class="card shadow h-100">
+
+            <div class="card-header bg-warning">
+
+                <i class="fa-solid fa-bolt"></i>
+
+                Quick Actions
+
+            </div>
+
+            <div class="card-body d-grid gap-3">
+
+                <a href="/upload" class="btn btn-primary">
+
+                    <i class="fa-solid fa-upload"></i>
+
+                    Upload Dataset
+
+                </a>
+
+                <a href="/analytics" class="btn btn-success">
+
+                    <i class="fa-solid fa-chart-column"></i>
+
+                    View Analytics
+
+                </a>
+
+                <a href="/dataset-manager" class="btn btn-dark">
+
+                    <i class="fa-solid fa-database"></i>
+
+                    Dataset Manager
+
+                </a>
+
+                <button class="btn btn-secondary" disabled>
+
+                    <i class="fa-solid fa-brain"></i>
+
+                    AI Prediction (Phase 3)
+
+                </button>
+
+                <button class="btn btn-danger" disabled>
+
+                    <i class="fa-solid fa-file-pdf"></i>
+
+                    Export AI Report
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

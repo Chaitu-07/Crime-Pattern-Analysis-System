@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block guest_content %}
+
+<div class="row justify-content-center mt-5">
+
+<div class="col-md-4">
+
+<div class="card shadow-lg">
+
+<div class="card-body">
+
+<h3 class="text-center">
+
+Admin Login
+
+</h3>
+
+<hr>
+
+<form method="POST">
+
+<input
+name="username"
+class="form-control mb-3"
+placeholder="Username"
+required>
+
+<input
+type="password"
+name="password"
+class="form-control mb-3"
+placeholder="Password"
+required>
+
+<button class="btn btn-dark w-100">
+
+Login
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+{% endblock %}

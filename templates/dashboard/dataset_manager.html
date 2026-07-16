@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2 class="mb-4">
+
+<i class="fa-solid fa-database"></i>
+
+Dataset Manager
+
+</h2>
+
+<div class="row">
+
+<div class="col-md-4">
+
+<div class="card shadow">
+
+<div class="card-body text-center">
+
+<h5>Total Crime Records</h5>
+
+<h1>{{ total_records }}</h1>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<br>
+
+<div class="card shadow border-danger">
+
+<div class="card-header bg-danger text-white">
+
+⚠ Danger Zone
+
+</div>
+
+<div class="card-body">
+
+<p>
+
+This will permanently delete all imported crime records.
+
+</p>
+
+<a
+href="/clear-records"
+class="btn btn-danger"
+onclick="return confirm('Delete ALL crime records?')">
+
+Delete All Crime Records
+
+</a>
+
+</div>
+
+</div>
+
+{% endblock %}

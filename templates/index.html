@@ -1,0 +1,314 @@
+{% extends "base.html" %}
+
+{% block guest_content %}
+
+<!-- Hero Section -->
+
+<section class="bg-dark text-white rounded-4 shadow p-5 mb-5">
+
+    <div class="row align-items-center">
+
+        <div class="col-lg-7">
+
+            <h1 class="display-4 fw-bold">
+
+                <i class="fa-solid fa-shield-halved text-primary"></i>
+
+                Crime Pattern Detection System
+
+            </h1>
+
+            <p class="lead mt-4">
+
+                AI-powered crime analytics platform for uploading datasets,
+                visualizing crime trends, detecting hotspots and generating
+                intelligent insights.
+
+            </p>
+
+            <div class="mt-4">
+
+                <a href="/login" class="btn btn-warning btn-lg me-3">
+
+                    <i class="fa-solid fa-user-lock"></i>
+
+                    Admin Login
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-5 text-center">
+
+            <i class="fa-solid fa-chart-column text-primary"
+               style="font-size:180px;"></i>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Statistics -->
+
+<div class="row g-4 mb-5">
+
+    <div class="col-md-3">
+
+        <div class="card shadow stat-card text-center">
+
+            <div class="card-body">
+
+                <i class="fa-solid fa-user-secret fa-2x text-danger mb-3"></i>
+
+                <h5>Total Crimes</h5>
+
+                <h2>{{ total }}</h2>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-3">
+
+        <div class="card shadow stat-card text-center">
+
+            <div class="card-body">
+
+                <i class="fa-solid fa-location-dot fa-2x text-success mb-3"></i>
+
+                <h5>Districts</h5>
+
+                <h2>{{ districts }}</h2>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-3">
+
+        <div class="card shadow stat-card text-center">
+
+            <div class="card-body">
+
+                <i class="fa-solid fa-building-shield fa-2x text-primary mb-3"></i>
+
+                <h5>Police Stations</h5>
+
+                <h2>{{ stations }}</h2>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-3">
+
+        <div class="card shadow stat-card text-center">
+
+            <div class="card-body">
+
+                <i class="fa-solid fa-circle-check fa-2x text-warning mb-3"></i>
+
+                <h5>Solved Cases</h5>
+
+                <h2>{{ solved }}%</h2>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Features -->
+
+<h2 class="mb-4">
+
+    <i class="fa-solid fa-star text-warning"></i>
+
+    Platform Features
+
+</h2>
+
+<div class="row g-4 mb-5">
+
+    <div class="col-md-3">
+
+        <div class="card shadow h-100 text-center">
+
+            <div class="card-body">
+
+                <i class="fa-solid fa-file-arrow-up fa-3x text-primary mb-3"></i>
+
+                <h4>Upload Dataset</h4>
+
+                <p>
+
+                    Import large crime datasets from CSV files.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-3">
+
+        <div class="card shadow h-100 text-center">
+
+            <div class="card-body">
+
+                <i class="fa-solid fa-chart-line fa-3x text-success mb-3"></i>
+
+                <h4>Analytics</h4>
+
+                <p>
+
+                    Interactive charts and crime statistics.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-3">
+
+        <div class="card shadow h-100 text-center">
+
+            <div class="card-body">
+
+                <i class="fa-solid fa-map-location-dot fa-3x text-danger mb-3"></i>
+
+                <h4>Crime Map</h4>
+
+                <p>
+
+                    Visualize crime locations on an interactive map.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-3">
+
+        <div class="card shadow h-100 text-center">
+
+            <div class="card-body">
+
+                <i class="fa-solid fa-brain fa-3x text-warning mb-3"></i>
+
+                <h4>AI Insights</h4>
+
+                <p>
+
+                    Detect crime patterns and future hotspots.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Technology -->
+
+<div class="card shadow mb-5">
+
+    <div class="card-header bg-dark text-white">
+
+        <i class="fa-solid fa-laptop-code"></i>
+
+        Technology Stack
+
+    </div>
+
+    <div class="card-body">
+
+        <div class="row text-center">
+
+            <div class="col">
+
+                <i class="fa-brands fa-python fa-2x text-primary"></i>
+
+                <p>Python</p>
+
+            </div>
+
+            <div class="col">
+
+                <i class="fa-solid fa-fire fa-2x text-danger"></i>
+
+                <p>Flask</p>
+
+            </div>
+
+            <div class="col">
+
+                <i class="fa-solid fa-database fa-2x text-success"></i>
+
+                <p>PostgreSQL</p>
+
+            </div>
+
+            <div class="col">
+
+                <i class="fa-solid fa-chart-column fa-2x text-warning"></i>
+
+                <p>Chart.js</p>
+
+            </div>
+
+            <div class="col">
+
+                <i class="fa-solid fa-earth-asia fa-2x text-info"></i>
+
+                <p>Leaflet</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Footer -->
+
+<div class="text-center text-muted mb-4">
+
+    <hr>
+
+    <p>
+
+        Crime Pattern Detection System © 2026
+
+        <br>
+
+        Final Year Data Analytics Project
+
+    </p>
+
+</div>
+
+{% endblock %}
