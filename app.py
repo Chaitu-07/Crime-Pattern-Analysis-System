@@ -40,15 +40,25 @@ with app.app_context():
 
     db.create_all()
 
-    if not Admin.query.filter_by(username="admin").first():
+    admin_username = os.getenv("ADMIN_USERNAME", "admin")
+admin_password = os.getenv("ADMIN_PASSWORD")
 
-        admin = Admin(username="admin")
+if (
+    admin_password
+    and not Admin.query.filter_by(
+        username=admin_username
+    ).first()
+):
+    admin = Admin(
+        username=admin_username
+    )
 
-        admin.set_password("admin123")
+    admin.set_password(
+        admin_password
+    )
 
-        db.session.add(admin)
-
-        db.session.commit()
+    db.session.add(admin)
+    db.session.commit()
 
 
 if __name__ == "__main__":
